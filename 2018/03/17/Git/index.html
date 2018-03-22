@@ -99,23 +99,26 @@
 
 
 
-  <meta name="description" content="Sophomore in Peking University">
-<meta property="og:type" content="website">
+  <meta name="description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
+<meta property="og:type" content="article">
 <meta property="og:title" content="David Xiang&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/03/17/Git/index.html">
 <meta property="og:site_name" content="David Xiang&#39;s Blog">
-<meta property="og:description" content="Sophomore in Peking University">
+<meta property="og:description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/03/17/images/Git_lifecycle.png">
+<meta property="og:updated_time" content="2018-03-22T16:35:46.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="David Xiang&#39;s Blog">
-<meta name="twitter:description" content="Sophomore in Peking University">
+<meta name="twitter:description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/17/images/Git_lifecycle.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/17/Git/"/>
 
 
 
@@ -125,7 +128,7 @@
   };
 </script>
 
-  <title>David Xiang's Blog</title>
+  <title> | David Xiang's Blog</title>
   
 
 
@@ -172,8 +175,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,9 +260,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -275,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/Git/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/Git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="向东伟 David Xiang">
@@ -292,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/23/Git/" itemprop="url">Git</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -306,7 +306,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-23T00:37:49+08:00">2018-03-23</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-17T10:51:47+08:00">2018-03-17</time>
             
 
             
@@ -343,9 +343,7 @@
       
 
       
-        
-          
-            <p>尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于<code>git</code>命令的使用还知之甚少。于是我决定对自——</p>
+        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于<code>git</code>命令的使用还知之甚少。于是我决定对自——</p>
 <p><strong>Git，个人博客的开篇决定就是你了！</strong></p>
 <h2 id="What’s-Git"><a href="#What’s-Git" class="headerlink" title="What’s Git"></a>What’s Git</h2><blockquote>
 <p>Git is a distributed version control system developed by Junio Hamano and Linus Torvalds.</p>
@@ -366,13 +364,13 @@
 <h3 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h3><p>安装Xcode Command Line Tools，这是Apple官方的软件开发工具，包含<code>git, llvm, make</code>等等常用命令行软件开发程序。</p>
 <p>或者，安装<a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">Homebrew</a>，这是一款macOS平台上流行的软件包管理工具，“使用Homebrew可以安装 Apple没有预装但你需要的东西”。</p>
 <h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>使用Linux下传统的安装工具，如<em>apt，yum</em>等，即可安装Git。</p>
-<h2 id="git-init-demo"><a href="#git-init-demo" class="headerlink" title="git init - demo"></a>git init - demo</h2><p>值得注意的是，在开始工作前，首先使用<code>mkdir</code>命令创建一个工作目录，并且进入这个目录：</p>
+<h2 id="Demo-Helloworld"><a href="#Demo-Helloworld" class="headerlink" title="Demo - Helloworld"></a>Demo - Helloworld</h2><h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>首先使用<code>mkdir</code>命令创建一个目录Helloworld，并且进入这个目录：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir Helloworld</span><br><span class="line">cd Helloworld</span><br></pre></td></tr></table></figure>
 <p>然后键入<code>git status</code>命令，会看到如下提示：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜  Helloworld git status</span><br><span class="line">fatal: Not a git repository (or any of the parent directories): .git</span><br></pre></td></tr></table></figure>
 <p>表明现在Helloworld目录还并不是一个git repository，我们需要使用<code>git init</code>命令来初始化这个目录：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  Helloworld git init</span><br><span class="line">Initialized empty Git repository in /Users/xiangdongwei/Helloworld/.git/</span><br><span class="line">➜  Helloworld git:(master)</span><br></pre></td></tr></table></figure>
-<p>我们发现shell的prompt也发生了变化，说明初始化成功，接下来我们就可以正式使用Git啦！</p>
+<p>我们发现shell的prompt也发生了变化，说明初始化成功。</p>
 <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p><img src="../images/Git_lifecycle.png" alt="ifecycl"></p>
 <p>Git 有三种状态，你的文件可能处于其中之一：已提交 <em>committed</em>、已修改 <em>modified</em> 和已暂存 <em>staged</em> 。 已提交表示数据已经安全的保存在本地数据库中。 已修改表示修改了文件，但还没保存到数据库中。 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。而未跟踪 <em>untracted</em> 的文件并未被纳入到Git版本系统之中。</p>
 <p>基本的 Git 工作流程如下：</p>
@@ -496,8 +494,6 @@
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p><code>git config --global config_name value</code>是设置全局配置的通法，<code>git config</code>则只对当前目录有效。通常需要设置的是<code>user.name</code>、<code>user.email</code>、<code>core.editor</code>等变量。可以通过<code>git config --list</code>查看所有配置。</p>
 <p><code>git config alias.alias_name &#39;original_command&#39;</code>可以为变量设置别名。</p>
 
-          
-        
       
     </div>
 
@@ -517,12 +513,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -532,14 +528,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -560,8 +561,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -624,6 +634,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-Git"><span class="nav-number">1.1.</span> <span class="nav-text">What’s Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#版本控制"><span class="nav-number">1.1.1.</span> <span class="nav-text">版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#差分编码"><span class="nav-number">1.1.2.</span> <span class="nav-text">差分编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式版本控制"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式版本控制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">1.2.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Win"><span class="nav-number">1.2.1.</span> <span class="nav-text">Win</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#macOS"><span class="nav-number">1.2.2.</span> <span class="nav-text">macOS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">1.2.3.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo-Helloworld"><span class="nav-number">1.3.</span> <span class="nav-text">Demo - Helloworld</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-init"><span class="nav-number">1.3.1.</span> <span class="nav-text">git init</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">1.4.</span> <span class="nav-text">Basics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rm"><span class="nav-number">1.4.1.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-mv"><span class="nav-number">1.4.2.</span> <span class="nav-text">git mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-diff"><span class="nav-number">1.4.3.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销操作"><span class="nav-number">1.4.4.</span> <span class="nav-text">撤销操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-branch"><span class="nav-number">1.4.5.</span> <span class="nav-text">git branch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程仓库"><span class="nav-number">1.4.6.</span> <span class="nav-text">远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exotic"><span class="nav-number">1.5.</span> <span class="nav-text">Exotic</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.5.1.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-tag"><span class="nav-number">1.5.2.</span> <span class="nav-text">git tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-stash"><span class="nav-number">1.5.3.</span> <span class="nav-text">git stash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitignore"><span class="nav-number">1.5.4.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Git"><span class="nav-number">1.5.5.</span> <span class="nav-text">配置Git</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -751,6 +777,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
+
+
 
   
 
