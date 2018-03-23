@@ -373,7 +373,7 @@
 <p>表明现在Helloworld目录还并不是一个git repository，我们需要使用<code>git init</code>命令来初始化这个目录：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  Helloworld git init</span><br><span class="line">Initialized empty Git repository in /Users/xiangdongwei/Helloworld/.git/</span><br><span class="line">➜  Helloworld git:(master)</span><br></pre></td></tr></table></figure>
 <p>我们发现shell的prompt也发生了变化，说明初始化成功，接下来我们就可以正式使用Git啦！</p>
-<h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p><img src="../images/Git_lifecycle.png" alt="ifecycl"></p>
+<h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p><img src="/images/Git_lifecycle.png" alt="lifecycle"></p>
 <p>Git 有三种状态，你的文件可能处于其中之一：已提交 <em>committed</em>、已修改 <em>modified</em> 和已暂存 <em>staged</em> 。 已提交表示数据已经安全的保存在本地数据库中。 已修改表示修改了文件，但还没保存到数据库中。 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。而未跟踪 <em>untracted</em> 的文件并未被纳入到Git版本系统之中。</p>
 <p>基本的 Git 工作流程如下：</p>
 <ol>
