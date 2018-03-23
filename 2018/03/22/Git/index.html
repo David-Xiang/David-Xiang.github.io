@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -75,9 +75,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Muse',
     version: '6.0.6',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -99,26 +99,27 @@
 
 
 
-  <meta name="description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
+  <meta name="description" content="如何快速上手Git？如何加入全球最大同性交友俱乐部Github？">
+<meta name="keywords" content="Git,CommandLine,Software">
 <meta property="og:type" content="article">
-<meta property="og:title" content="David Xiang&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/2018/03/17/Git/index.html">
+<meta property="og:title" content="Git">
+<meta property="og:url" content="http://yoursite.com/2018/03/22/Git/index.html">
 <meta property="og:site_name" content="David Xiang&#39;s Blog">
-<meta property="og:description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/03/17/images/Git_lifecycle.png">
-<meta property="og:updated_time" content="2018-03-22T16:35:46.543Z">
+<meta property="og:description" content="如何快速上手Git？如何加入全球最大同性交友俱乐部Github？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/images/Git_lifecycle.png">
+<meta property="og:updated_time" content="2018-03-23T14:56:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="David Xiang&#39;s Blog">
-<meta name="twitter:description" content="Git尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于git命令的使用还知之甚少。于是我决定对自—— Git，个人博客的开篇决定就是你了！ What’s Git Git is a distributed version control system developed by Junio Hamano and Linus Torvalds. Quoti">
-<meta name="twitter:image" content="http://yoursite.com/2018/03/17/images/Git_lifecycle.png">
+<meta name="twitter:title" content="Git">
+<meta name="twitter:description" content="如何快速上手Git？如何加入全球最大同性交友俱乐部Github？">
+<meta name="twitter:image" content="http://yoursite.com/images/Git_lifecycle.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/17/Git/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/22/Git/"/>
 
 
 
@@ -128,7 +129,7 @@
   };
 </script>
 
-  <title> | David Xiang's Blog</title>
+  <title>Git | David Xiang's Blog</title>
   
 
 
@@ -168,7 +169,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -198,7 +199,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -217,7 +218,25 @@
           
   <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
 </li>
 
       
@@ -226,7 +245,7 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
 </li>
 
       
@@ -237,6 +256,25 @@
 
   
     
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
 
   
 
@@ -277,10 +315,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/Git/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/22/Git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="向东伟 David Xiang">
+      <meta itemprop="name" content="David Xiang">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpeg">
     </span>
@@ -294,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">Git</h1>
         
 
         <div class="post-meta">
@@ -304,30 +342,95 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-17T10:51:47+08:00">2018-03-17</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T21:07:49+08:00">2018-03-22</time>
             
 
             
             
+              
+                
+              
+            
 
+            
+              
+              <span class="post-meta-divider">|</span>
+              
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于：</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-23T22:56:11+08:00">2018-03-23</time>
             
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/SoftWare/" itemprop="url" rel="index"><span itemprop="name">SoftWare</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/22/Git/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/22/Git/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
           
           
-
+             <span id="/2018/03/22/Git/" class="leancloud_visitors" data-flag-title="Git">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
+          
+
+          
+              <div class="post-description">如何快速上手Git？如何加入全球最大同性交友俱乐部Github？</div>
           
 
         </div>
@@ -343,7 +446,7 @@
       
 
       
-        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于<code>git</code>命令的使用还知之甚少。于是我决定对自——</p>
+        <p>尽管自己一直与Github有所接触，比如用Github交个作业啦，Fork一个项目啦……但是对于<code>git</code>命令的使用还知之甚少。于是我决定对自——</p>
 <p><strong>Git，个人博客的开篇决定就是你了！</strong></p>
 <h2 id="What’s-Git"><a href="#What’s-Git" class="headerlink" title="What’s Git"></a>What’s Git</h2><blockquote>
 <p>Git is a distributed version control system developed by Junio Hamano and Linus Torvalds.</p>
@@ -360,18 +463,18 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ git     </span><br><span class="line">usage: git [--version] [--help] [-C &lt;path&gt;] [-c name=value]</span><br><span class="line">           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]</span><br><span class="line">           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]</span><br><span class="line">           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]</span><br><span class="line">           &lt;command&gt; [&lt;args&gt;]</span><br><span class="line"></span><br><span class="line">These are common Git commands used in various situations:</span><br><span class="line"></span><br><span class="line">start a working area (see also: git help tutorial)</span><br><span class="line">   clone      Clone a repository into a new directory</span><br><span class="line">   init       Create an empty Git repository or reinitialize an existing one</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">➜  ~</span><br></pre></td></tr></table></figure>
 <p>则表明你的系统上已经装有Git，可以跳过安装步骤了。</p>
 <p>否则需要根据系统的不同，选择对应方法安装Git：</p>
-<h3 id="Win"><a href="#Win" class="headerlink" title="Win"></a>Win</h3><p>在<a href="http://git-scm.com/download/win" target="_blank" rel="noopener">http://git-scm.com/download/win</a>下载并安装Git For Windows，然后在系统PATH变量中加入Git的安装目录即可。</p>
+<h3 id="Win"><a href="#Win" class="headerlink" title="Win"></a>Win</h3><p>在<a href="http://git-scm.com/download/win" target="_blank" rel="noopener">Git - Downloading Package</a>下载并安装Git For Windows，然后在系统PATH变量中加入Git的安装目录即可。</p>
 <h3 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h3><p>安装Xcode Command Line Tools，这是Apple官方的软件开发工具，包含<code>git, llvm, make</code>等等常用命令行软件开发程序。</p>
 <p>或者，安装<a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">Homebrew</a>，这是一款macOS平台上流行的软件包管理工具，“使用Homebrew可以安装 Apple没有预装但你需要的东西”。</p>
 <h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>使用Linux下传统的安装工具，如<em>apt，yum</em>等，即可安装Git。</p>
-<h2 id="Demo-Helloworld"><a href="#Demo-Helloworld" class="headerlink" title="Demo - Helloworld"></a>Demo - Helloworld</h2><h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>首先使用<code>mkdir</code>命令创建一个目录Helloworld，并且进入这个目录：</p>
+<h2 id="git-init-demo"><a href="#git-init-demo" class="headerlink" title="git init - demo"></a>git init - demo</h2><p>值得注意的是，在开始工作前，首先使用<code>mkdir</code>命令创建一个工作目录，并且进入这个目录：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir Helloworld</span><br><span class="line">cd Helloworld</span><br></pre></td></tr></table></figure>
 <p>然后键入<code>git status</code>命令，会看到如下提示：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜  Helloworld git status</span><br><span class="line">fatal: Not a git repository (or any of the parent directories): .git</span><br></pre></td></tr></table></figure>
 <p>表明现在Helloworld目录还并不是一个git repository，我们需要使用<code>git init</code>命令来初始化这个目录：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  Helloworld git init</span><br><span class="line">Initialized empty Git repository in /Users/xiangdongwei/Helloworld/.git/</span><br><span class="line">➜  Helloworld git:(master)</span><br></pre></td></tr></table></figure>
-<p>我们发现shell的prompt也发生了变化，说明初始化成功。</p>
-<h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p><img src="../images/Git_lifecycle.png" alt="ifecycl"></p>
+<p>我们发现shell的prompt也发生了变化，说明初始化成功，接下来我们就可以正式使用Git啦！</p>
+<h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p><img src="/images/Git_lifecycle.png" alt="lifecycle"></p>
 <p>Git 有三种状态，你的文件可能处于其中之一：已提交 <em>committed</em>、已修改 <em>modified</em> 和已暂存 <em>staged</em> 。 已提交表示数据已经安全的保存在本地数据库中。 已修改表示修改了文件，但还没保存到数据库中。 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。而未跟踪 <em>untracted</em> 的文件并未被纳入到Git版本系统之中。</p>
 <p>基本的 Git 工作流程如下：</p>
 <ol>
@@ -490,7 +593,7 @@
 </ol>
 <h3 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h3><p>通过编辑这个文件，可以让Git“无视”工作目录下的某些文件。</p>
 <p>实例如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> no .a files</span><br><span class="line">*.a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> but do track lib.a, even though you're ignoring .a files above</span><br><span class="line">!lib.a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> only ignore the TODO file in the current directory, not subdir/TODO</span><br><span class="line">/TODO</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> ignore all files in the build/ directory</span><br><span class="line">build/</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> ignore doc/notes.txt, but not doc/server/arch.txt</span><br><span class="line">doc/*.txt</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> ignore all .pdf files in the doc/ directory</span><br><span class="line">doc/**/*.pdf</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># no .a files</span><br><span class="line">*.a</span><br><span class="line"></span><br><span class="line"># but do track lib.a, even though you&apos;re ignoring .a files above</span><br><span class="line">!lib.a</span><br><span class="line"></span><br><span class="line"># only ignore the TODO file in the current directory, not subdir/TODO</span><br><span class="line">/TODO</span><br><span class="line"></span><br><span class="line"># ignore all files in the build/ directory</span><br><span class="line">build/</span><br><span class="line"></span><br><span class="line"># ignore doc/notes.txt, but not doc/server/arch.txt</span><br><span class="line">doc/*.txt</span><br><span class="line"></span><br><span class="line"># ignore all .pdf files in the doc/ directory</span><br><span class="line">doc/**/*.pdf</span><br></pre></td></tr></table></figure>
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p><code>git config --global config_name value</code>是设置全局配置的通法，<code>git config</code>则只对当前目录有效。通常需要设置的是<code>user.name</code>、<code>user.email</code>、<code>core.editor</code>等变量。可以通过<code>git config --list</code>查看所有配置。</p>
 <p><code>git config alias.alias_name &#39;original_command&#39;</code>可以为变量设置别名。</p>
 
@@ -510,6 +613,16 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+            <a href="/tags/CommandLine/" rel="tag"># CommandLine</a>
+          
+            <a href="/tags/Software/" rel="tag"># Software</a>
+          
+        </div>
       
 
       
@@ -539,6 +652,16 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -556,6 +679,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -563,10 +688,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -577,9 +702,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/avatar.jpeg"
-                alt="向东伟 David Xiang" />
+                alt="David Xiang" />
             
-              <p class="site-author-name" itemprop="name">向东伟 David Xiang</p>
+              <p class="site-author-name" itemprop="name">David Xiang</p>
               <p class="site-description motion-element" itemprop="description">Sophomore in Peking University</p>
           </div>
 
@@ -591,13 +716,45 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -614,6 +771,16 @@
               
                 <span class="links-of-author-item">
                   <a href="mailto:xdw@pku.edu.cn" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/xiang-dong-wei/" target="_blank" title="zhihu"><i class="fa fa-fw fa-globe"></i>zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.douban.com/people/65135562/" target="_blank" title="douban"><i class="fa fa-fw fa-globe"></i>douban</a>
                   
                 </span>
               
@@ -644,7 +811,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-Git"><span class="nav-number">1.1.</span> <span class="nav-text">What’s Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#版本控制"><span class="nav-number">1.1.1.</span> <span class="nav-text">版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#差分编码"><span class="nav-number">1.1.2.</span> <span class="nav-text">差分编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式版本控制"><span class="nav-number">1.1.3.</span> <span class="nav-text">分布式版本控制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">1.2.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Win"><span class="nav-number">1.2.1.</span> <span class="nav-text">Win</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#macOS"><span class="nav-number">1.2.2.</span> <span class="nav-text">macOS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">1.2.3.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo-Helloworld"><span class="nav-number">1.3.</span> <span class="nav-text">Demo - Helloworld</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-init"><span class="nav-number">1.3.1.</span> <span class="nav-text">git init</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">1.4.</span> <span class="nav-text">Basics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rm"><span class="nav-number">1.4.1.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-mv"><span class="nav-number">1.4.2.</span> <span class="nav-text">git mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-diff"><span class="nav-number">1.4.3.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销操作"><span class="nav-number">1.4.4.</span> <span class="nav-text">撤销操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-branch"><span class="nav-number">1.4.5.</span> <span class="nav-text">git branch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程仓库"><span class="nav-number">1.4.6.</span> <span class="nav-text">远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exotic"><span class="nav-number">1.5.</span> <span class="nav-text">Exotic</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">1.5.1.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-tag"><span class="nav-number">1.5.2.</span> <span class="nav-text">git tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-stash"><span class="nav-number">1.5.3.</span> <span class="nav-text">git stash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitignore"><span class="nav-number">1.5.4.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Git"><span class="nav-number">1.5.5.</span> <span class="nav-text">配置Git</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-Git"><span class="nav-number">1.</span> <span class="nav-text">What’s Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#版本控制"><span class="nav-number">1.1.</span> <span class="nav-text">版本控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#差分编码"><span class="nav-number">1.2.</span> <span class="nav-text">差分编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式版本控制"><span class="nav-number">1.3.</span> <span class="nav-text">分布式版本控制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">2.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Win"><span class="nav-number">2.1.</span> <span class="nav-text">Win</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#macOS"><span class="nav-number">2.2.</span> <span class="nav-text">macOS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">2.3.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-init-demo"><span class="nav-number">3.</span> <span class="nav-text">git init - demo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">4.</span> <span class="nav-text">Basics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rm"><span class="nav-number">4.1.</span> <span class="nav-text">git rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-mv"><span class="nav-number">4.2.</span> <span class="nav-text">git mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-diff"><span class="nav-number">4.3.</span> <span class="nav-text">git diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销操作"><span class="nav-number">4.4.</span> <span class="nav-text">撤销操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小结"><span class="nav-number">4.4.1.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-branch"><span class="nav-number">4.5.</span> <span class="nav-text">git branch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程仓库"><span class="nav-number">4.6.</span> <span class="nav-text">远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exotic"><span class="nav-number">5.</span> <span class="nav-text">Exotic</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log"><span class="nav-number">5.1.</span> <span class="nav-text">git log</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-tag"><span class="nav-number">5.2.</span> <span class="nav-text">git tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-stash"><span class="nav-number">5.3.</span> <span class="nav-text">git stash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitignore"><span class="nav-number">5.4.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Git"><span class="nav-number">5.5.</span> <span class="nav-text">配置Git</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -666,9 +833,9 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate"> 
-    <i class="fa fa-user"></i>
+    <i class="fa fa-user-circle"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">向东伟 David Xiang</span>
+  <span class="author" itemprop="copyrightHolder">David Xiang</span>
 
   
 
@@ -678,15 +845,11 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.6</div>
 
 
 
@@ -736,6 +899,8 @@
 
 
 
+  
+
 
 
 
@@ -761,6 +926,11 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -791,6 +961,31 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://true.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/03/22/Git/';
+        this.page.identifier = '2018/03/22/Git/';
+        this.page.title = 'Git';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://true.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
 
 
 	
@@ -805,10 +1000,6 @@
 
 
 
-  
-
-
-
 
 
 
@@ -823,6 +1014,118 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("kMOox8M7xQUXDsos5xiFxASt-gzGzoHsz", "w7Av27kAENWGVUzlg42hQoDf");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var newcounter = new Counter();
+              /* Set ACL */
+              var acl = new AV.ACL();
+              acl.setPublicReadAccess(true);
+              acl.setPublicWriteAccess(true);
+              newcounter.setACL(acl);
+              /* End Set ACL */
+              newcounter.set("title", title);
+              newcounter.set("url", url);
+              newcounter.set("time", 1);
+              newcounter.save(null, {
+                success: function(newcounter) {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                },
+                error: function(newcounter, error) {
+                  console.log('Failed to create');
+                }
+              });
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
